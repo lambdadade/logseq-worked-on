@@ -1,12 +1,12 @@
 {
-  "name": "logseq-plugin-done-time",
+  "name": "logseq-worked-on",
   "version": "1.0",
   "description": "Adds a timestamp property to a task when it's marked as DONE",
   "targets": {
     "main": false
   },
   "default": "dist/index.html",
-  "author": "Menno Finlay-Smits <hello@menno.io>",
+  "author": "lambdadade <mars@cnova.de>",
   "license": "MIT",
   "scripts": {
     "dev": "parcel ./index.html --public-url ./",
@@ -18,8 +18,8 @@
   },
   "logseq": {
     "main": "dist/index.html",
-    "title": "DONE time",
-    "id": "io_menno_done_time_zqqyauglz",
+    "title": "Worked On",
+    "id": "lambdadade_worked_on_ytaskd",
     "icon": "icon.png"
   },
   "dependencies": {
