@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
       - uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r logseq-done-time.zip dist README.md package.json LICENSE icon.png
+          args: zip -qq -r logseq-worked-on.zip dist README.md package.json LICENSE icon.png
       - uses: softprops/action-gh-release@v2
         with:
           files: |
