@@ -30,7 +30,7 @@ this is an example query to show all tasks with the "worked-on" property set on 
  :breadcrumb-show? false
  :result-transform (fn [result] (sort-by
   (fn [r] (get-in r [:block/properties :date]))
-  (map ;#make a new map from the result set
+  (map
     (fn [r]
       (update (:block r) :block/properties
         (fn [u] (assoc u :date (get-in r [:date]) ) )
