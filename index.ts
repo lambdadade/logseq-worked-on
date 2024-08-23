@@ -21,7 +21,7 @@ function main() {
       const dd = String(today.getDate()).padStart(2, '0');
       const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
       const yyyy = today.getFullYear();
-      logseq.Editor.upsertBlockProperty(taskBlock.uuid, "last-worked-on", "[[" + yyyy + '_' + mm + '_' + dd + "]]");
+      logseq.Editor.upsertBlockProperty(taskBlock.uuid, "worked-on", "[[" + yyyy + '_' + mm + '_' + dd + "]]");
     } else {
       if (!hasProperty) {
         return;
